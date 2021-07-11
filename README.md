@@ -11,6 +11,6 @@ It will start by greeting the user in Arabic. Then, it will detect the text ente
 
 ## Deploy the chatbot 
 The chatbot is integrted with a robot arm control interface. 
-![](interface's_chatbot.PNG)
+![](Interface's_chatbot.PNG)
 
 
