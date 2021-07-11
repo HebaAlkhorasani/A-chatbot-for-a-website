@@ -1,0 +1,646 @@
+{
+  "intents": [
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "الى اللقاء"
+        },
+        {
+          "text": "باي"
+        },
+        {
+          "text": "تشاو"
+        },
+        {
+          "text": "ثانكس"
+        },
+        {
+          "text": "ثانكيو"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "مع السلامة"
+        },
+        {
+          "text": "وداعا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "اهلا وسهلا"
+        },
+        {
+          "text": "اهلين"
+        },
+        {
+          "text": "سلام"
+        },
+        {
+          "text": "مراحب"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "مساء الخير"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "هيلو"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Image",
+      "examples": [
+        {
+          "text": "تظهر"
+        },
+        {
+          "text": "توضيح"
+        },
+        {
+          "text": "جسم"
+        },
+        {
+          "text": "رسم"
+        },
+        {
+          "text": "صور"
+        },
+        {
+          "text": "صورة"
+        },
+        {
+          "text": "مجسم"
+        },
+        {
+          "text": "مرئي"
+        },
+        {
+          "text": "هيكل"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Rating",
+      "examples": [
+        {
+          "text": "اقيم"
+        },
+        {
+          "text": "تقييم"
+        },
+        {
+          "text": "معدل"
+        },
+        {
+          "text": "نسبة"
+        },
+        {
+          "text": "يقدر"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Service",
+      "examples": [
+        {
+          "text": "ايرور"
+        },
+        {
+          "text": "حل"
+        },
+        {
+          "text": "خدمات"
+        },
+        {
+          "text": "خدمة"
+        },
+        {
+          "text": "طريقة"
+        },
+        {
+          "text": "طريقة الاستخدام"
+        },
+        {
+          "text": "كيف استخدمك؟"
+        },
+        {
+          "text": "كيفية"
+        },
+        {
+          "text": "مشكلة"
+        },
+        {
+          "text": "هدف الواجهة"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Interface_Goal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "تهدف",
+          "synonyms": [
+            "تفيد"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "هدف",
+          "synonyms": [
+            "جول",
+            "غاية",
+            "غرض",
+            "فائدة",
+            "مقصد"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Using_Method",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "استخدام",
+          "synonyms": [
+            "استعمال",
+            "تشغيل",
+            "توظيف",
+            "عمل"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "استخدم",
+          "synonyms": [
+            "اتعامل",
+            "استعمل",
+            "اشغل"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "الاستخدام",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "From",
+          "value": "https://drive.google.com/drive/u/1/my-drive"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1625973671115",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1625973671132",
+      "previous_sibling": "handler_4_1625973671132"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1625973671115",
+      "event_name": "input",
+      "dialog_node": "handler_4_1625973671132"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1625973666263",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1625973666273",
+      "previous_sibling": "handler_8_1625973666272"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1625938482328",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1625938482355",
+      "previous_sibling": "handler_9_1625938482355"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1625973666263",
+      "event_name": "input",
+      "dialog_node": "handler_8_1625973666272"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1625938482328",
+      "event_name": "input",
+      "dialog_node": "handler_9_1625938482355"
+    },
+    {
+      "type": "standard",
+      "title": "نهاية",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "شكراً لك على استخدام واجهتنا عزيزينا المستخدم، الى اللقاء."
+              },
+              {
+                "text": "مع السلامة عزيزنا المستخدم."
+              },
+              {
+                "text": "نراك قريبا، شكراً لزيارتك."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Goodbye",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1625973161794",
+      "previous_sibling": "node_1_1625935120539"
+    },
+    {
+      "type": "standard",
+      "title": "صورة",
+      "output": {
+        "generic": [
+          {
+            "title": "صورة هيكل روبوت المسابقة:",
+            "source": "https://i.imgur.com/VBVYHDv.png",
+            "response_type": "image"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Image",
+      "dialog_node": "node_10_1625981755014",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "تقييم",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يمكنك تقييم خدمتنا من 100 (مثال: 90%)."
+              },
+              {
+                "text": "ادخل نسبة مئوية لتقييم خدمتنا (مثال: 85%)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Rating",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1625889427660",
+      "previous_sibling": "node_5_1625938545639"
+    },
+    {
+      "type": "frame",
+      "title": "خدمات",
+      "output": {
+        "generic": [
+          {
+            "title": "يمكنني مساعدتك في:",
+            "options": [
+              {
+                "label": "هدف الواجهة",
+                "value": {
+                  "input": {
+                    "text": "هدف الواجهة"
+                  }
+                }
+              },
+              {
+                "label": "طريقة الاستخدام",
+                "value": {
+                  "input": {
+                    "text": "طريقة الاستخدام"
+                  }
+                }
+              },
+              {
+                "label": "تقييم الواجهة",
+                "value": {
+                  "input": {
+                    "text": "تقييم الواجهة"
+                  }
+                }
+              },
+              {
+                "label": "صورة لهيكل الروبوت",
+                "value": {
+                  "input": {
+                    "text": "صورة لهيكل الروبوت"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Service",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1625935120539",
+      "previous_sibling": "node_2_1625977054630"
+    },
+    {
+      "type": "standard",
+      "title": "نسبة",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "شكراً لك عل تقييمك عزيزنا المستخدم."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@sys-percentage",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1625977054630",
+      "previous_sibling": "node_1_1625889427660"
+    },
+    {
+      "type": "frame",
+      "title": "هدف الواجهة",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "الواجهة تهدف للتحكم بذراع الروبوت المستخدمة في مشروع المسابقة. سوف يتم التحكم بالذراع عن بعد باستخدام نظام ROS، الذي سيستقبل المعلومات المدخلة من قبل المستخدم عن طريق صفحة php."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Interface_Goal",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1625888955838",
+      "previous_sibling": "node_10_1625981755014"
+    },
+    {
+      "type": "frame",
+      "title": "طريقة الاستخدام",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "الواجهة تتكون من قسمين: الاول للتحكم بمحركات الذراع، والثاني للتحكم بقاعدة الذراع المتحركة. \n\n- القسم الاول يتكون من زرين لحفظ الارقام المدخلة لكل محرك، والاخر لتشغيل الذراع.\n- القسم الثاني يتكون من خمس ازرار لتحكم باتجاه القاعدة."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Using_Method",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1625938545639",
+      "previous_sibling": "node_3_1625888955838"
+    },
+    {
+      "type": "standard",
+      "title": "بداية",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك بواجهتنا، انا عَون هنا لمساعدتك."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1625935297368"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "هيكل روبوت المسابقة:",
+            "source": " https://s3.eu.cloud-object-storage.appdomain.cloud/your-bucket-name/this-is-the-image.png.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1625981755014",
+      "disabled": true,
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_3_1625983763176"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك عزيزنا المستخدم بواجهة التحكم بذراع الروبوت، كيف يمكنني مساعدتك؟"
+              },
+              {
+                "text": "اهلا وسهلاً عزيزينا المستخدم بواجهة التحكم بذراع الروبوت، كيف يمكننا خدمتك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "مرحبا",
+      "disabled": true,
+      "dialog_node": "response_7_1625938482544"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1625981755014",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1625983764998",
+      "previous_sibling": "response_3_1625983763176"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1625888955838",
+      "dialog_node": "slot_10_1625973666263"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1625938545639",
+      "dialog_node": "slot_2_1625973671115"
+    },
+    {
+      "type": "slot",
+      "parent": "مرحبا",
+      "dialog_node": "slot_9_1625938482328",
+      "previous_sibling": "response_7_1625938482544"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_10_1625973161794",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك عزيزنا المستخدم بواجهة التحكم بذراع الروبوت، كيف يمكنني مساعدتك؟"
+              },
+              {
+                "text": "اهلا وسهلاً عزيزينا المستخدم بواجهة التحكم بذراع الروبوت، كيف يمكننا خدمتك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Greeting",
+      "digress_in": "does_not_return",
+      "dialog_node": "مرحبا",
+      "previous_sibling": "node_7_1625935297368"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "كم عمرك؟"
+    },
+    {
+      "text": "كيف استخدمك؟"
+    },
+    {
+      "text": "كيف اسوي عصير؟"
+    },
+    {
+      "text": "كيف صنعوك؟"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "خدمة مستخدمي واجهة",
+  "language": "ar",
+  "description": ""
+}
