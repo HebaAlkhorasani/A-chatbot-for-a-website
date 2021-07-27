@@ -27,6 +27,6 @@ The chatbot is integrted with a robot arm control interface by embeding this cod
 </script>
 ```
 This image shows the chatbot style on the interface:
-![](Interface's_chatbot.PNG)
+![](Integrated_chatbot.PNG)
 
 
